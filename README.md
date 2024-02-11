@@ -1,5 +1,5 @@
 # E-Commerce-Application
-### Welcome to our E-commerce application project! Built with the Spring Boot backend and the Angular frontend, this project is an user friendly app where users can register, login, change profile, view products, view a product in detail, and add products to the cart and much more.....
+#### Welcome to our E-commerce application project! Built with the Spring Boot backend and the Angular frontend, this project is an user friendly app where users can register, login, change profile, view products, view a product in detail, and add products to the cart and much more.....
 
 ### Features
 * User Registration: Users can register with the application by providing necessary details.
