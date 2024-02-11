@@ -3,9 +3,9 @@
 
 ### Features
 * User Registration: Users can register with the application by providing necessary details.
-*User Authentication: Registered users can log in securely using their credentials.
-*Profile Management: Users can view and update their profiles, including details like name, email, and address.
-*Product Catalog: The application displays a catalog of available products.
+* User Authentication: Registered users can log in securely using their credentials.
+* Profile Management: Users can view and update their profiles, including details like name, email, and address.
+* Product Catalog: The application displays a catalog of available products.
 * Product Details: Users can view detailed information about each product, including images, descriptions, and prices.
 * Shopping Cart: Users can add products to their shopping cart for later purchase. They can also modify quantities and remove items from the cart.
 * Checkout Process: Users can proceed to checkout from the shopping cart, providing shipping and payment information.
