@@ -1,0 +1,67 @@
+<div class="mx-5" style="margin-top: 5rem;">
+    <style>
+        table * {
+            color: white;
+            border: none;
+        }
+    </style>
+    <h1>Cart</h1>
+    <table class="table mt-5">
+        <thead style="background-color: #fff2; border: none;" class="mb-5">
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Date Added to Cart</th>
+            <th scope="col">Total</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let item of cartItems; let i = index">
+            <tr>
+                <th scope="row" routerLink="/shop/products/{{item.product.id}}">{{item.product.name}}</th>
+                <td>${{item.product.price | number: '1.2-2'}}</td>
+                <td>
+                    <div class="d-flex" style="align-items: center;">
+                        <p style="margin-right: 1rem;">{{ item.quantity }}</p>
+                        <button class="bg-transparent">
+                            <fa-icon 
+                            [icon]="caretDown" 
+                            [style.color]="'#faa'" 
+                            class="mx-1" 
+                            size="2x"
+                            (click)="decreaseQuantity(item)"
+                        ></fa-icon>
+                        </button>
+                        <button class="bg-transparent">
+                            <fa-icon 
+                            [icon]="caretUp" 
+                            [style.color]="'#afa'" 
+                            class="mx-1" 
+                            size="2x"
+                            (click)="increaseQuantity(item)"
+                        ></fa-icon>
+                        </button>
+                    </div>
+                </td>
+                <td>{{item.addedOn | date: 'MM/dd/YYYY'}}</td>
+                <td>${{item.totalPrice | number: '1.2-2'}}</td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><h4 class="text-success font-weight-bold">${{getTotal() | number: '1.2-2'}}</h4></td>
+              </tr>
+              <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td><button class="btn btn-success" *ngIf="cartItems">Checkout</button></td>
+              </tr>
+        </tbody>
+    </table>
+</div>
