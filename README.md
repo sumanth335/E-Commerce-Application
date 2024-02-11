@@ -3,7 +3,7 @@ Built E-commerce app with the Spring Boot backend and the Angular frontend, this
 
 Welcome to our E-commerce  application project! This application is built using Typescript Angular for the frontend and Java Spring Boot for the backend. It allows users to register, login, view products, add products to the cart, and manage their profiles.
 
-Features
+### Features
 User Registration: Users can register with the application by providing necessary details.
 User Authentication: Registered users can log in securely using their credentials.
 Profile Management: Users can view and update their profiles, including details like name, email, and address.
